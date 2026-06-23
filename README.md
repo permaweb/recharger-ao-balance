@@ -36,3 +36,15 @@ Build:
 rebar3 compile
 rebar3 device package
 ```
+
+published device
+
+```bash
+Published device: recharger-ao-balance@1.0; 
+
+Specification ID: ZZPxZfKlM3vg6qQO2zs5ISVp0JAL3E_XZ9wZ_pA0rOU; 
+
+Implementation ID: cZVD2g1Ir69KoZBE8-tja2FZVyC4O46MeAfMjW4NuZk; 
+
+Signer: vZY2XY1RD9HIfWi8ift-1_DnHLDadZMWrufSh-_rKF0.
+```
