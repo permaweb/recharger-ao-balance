@@ -1,0 +1,54 @@
+{
+    "port": 18734,
+    "priv_key_location": "hyperbeam-key.json",
+    "http_client": "hackney",
+    "trusted_devices": {
+        "recharger-ao-balance@1.0": "cZVD2g1Ir69KoZBE8-tja2FZVyC4O46MeAfMjW4NuZk"
+    },
+    "simple_pay_price": 0,
+    "recharging_ledger_max": 10000,
+    "recharging_ledger_recharge": 0,
+    "recharging_ledger_period": 1,
+    "recharging_ledger_rates": {
+        "device": "recharger-ao-balance@1.0",
+        "state-node": "https://state.forward.computer",
+        "token-process": "0syT13r0s0tgPmIed95bJnuSqaD29HQNN8D3ElLSrsc",
+        "base-rate": 0,
+        "balance-step": 1000000000000,
+        "rate-step": 1000
+    },
+    "router_opts": {
+        "offered": [
+            {
+                "template": "/greeting",
+                "price": 3
+            }
+        ]
+    },
+    "p4_non_chargable_routes": [
+        {
+            "template": "/~p4@1.0/balance"
+        },
+        {
+            "template": "/~p4@1.0/topup"
+        },
+        {
+            "template": "/~meta@1.0/*"
+        },
+        {
+            "template": "/~recharging-ledger@1.0/*"
+        }
+    ],
+    "on": {
+        "request": {
+            "device": "p4@1.0",
+            "ledger-device": "recharging-ledger@1.0",
+            "pricing-device": "simple-pay@1.0"
+        },
+        "response": {
+            "device": "p4@1.0",
+            "ledger-device": "recharging-ledger@1.0",
+            "pricing-device": "simple-pay@1.0"
+        }
+    }
+}
