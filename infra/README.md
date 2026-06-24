@@ -41,5 +41,17 @@ journalctl -u recharger-ao-balance -f
 Expected endpoint:
 
 ```text
-http://<server>:18734
+http://<server>:18735
 ```
+
+## Bundler gating
+
+`config.json` gates bundler uploads through P4 with:
+
+- `ledger-device`: `recharging-ledger@1.0`
+- `pricing-device`: `metering@1.0`
+- `metering-rates.arweave-bytes`: `2`
+- `metering-rates.beam-reductions`: `0`
+
+`dev_bundler` meters the serialized ANS-104 item size, then P4 charges the
+request signer from the recharging ledger after the upload succeeds.

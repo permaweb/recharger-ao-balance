@@ -1,11 +1,15 @@
 {
-    "port": 18734,
+    "port": 18735,
     "priv_key_location": "hyperbeam-key.json",
     "http_client": "hackney",
     "trusted_devices": {
         "recharger-ao-balance@1.0": "cZVD2g1Ir69KoZBE8-tja2FZVyC4O46MeAfMjW4NuZk"
     },
     "simple_pay_price": 0,
+    "metering_rates": {
+        "arweave-bytes": 2,
+        "beam-reductions": 0
+    },
     "recharging_ledger_max": 86400,
     "recharging_ledger_recharge": 1,
     "recharging_ledger_period": 1,
@@ -43,12 +47,12 @@
         "request": {
             "device": "p4@1.0",
             "ledger-device": "recharging-ledger@1.0",
-            "pricing-device": "simple-pay@1.0"
+            "pricing-device": "metering@1.0"
         },
         "response": {
             "device": "p4@1.0",
             "ledger-device": "recharging-ledger@1.0",
-            "pricing-device": "simple-pay@1.0"
+            "pricing-device": "metering@1.0"
         }
     }
 }
