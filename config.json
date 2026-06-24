@@ -6,16 +6,16 @@
         "recharger-ao-balance@1.0": "cZVD2g1Ir69KoZBE8-tja2FZVyC4O46MeAfMjW4NuZk"
     },
     "simple_pay_price": 0,
-    "recharging_ledger_max": 10000,
-    "recharging_ledger_recharge": 0,
+    "recharging_ledger_max": 86400,
+    "recharging_ledger_recharge": 1,
     "recharging_ledger_period": 1,
     "recharging_ledger_rates": {
         "device": "recharger-ao-balance@1.0",
         "state-node": "https://state.forward.computer",
         "token-process": "0syT13r0s0tgPmIed95bJnuSqaD29HQNN8D3ElLSrsc",
-        "base-rate": 0,
+        "base-rate": 1,
         "balance-step": 1000000000000,
-        "rate-step": 1000
+        "rate-step": 1
     },
     "router_opts": {
         "offered": [

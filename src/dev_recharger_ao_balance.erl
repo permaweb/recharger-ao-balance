@@ -5,7 +5,7 @@
 
 -define(DEFAULT_STATE_NODE, <<"https://state.forward.computer">>).
 -define(DEFAULT_TOKEN_PROCESS, <<"0syT13r0s0tgPmIed95bJnuSqaD29HQNN8D3ElLSrsc">>).
--define(DEFAULT_BASE_RATE, 0).
+-define(DEFAULT_BASE_RATE, 1).
 -define(DEFAULT_BALANCE_STEP, 1_000_000_000_000).
 -define(DEFAULT_RATE_STEP, 1).
 
