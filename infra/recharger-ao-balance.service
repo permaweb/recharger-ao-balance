@@ -1,0 +1,21 @@
+[Unit]
+Description=HyperBEAM recharger AO-balance node
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=hyperbeam
+Group=hyperbeam
+WorkingDirectory=/opt/recharger-ao-balance
+EnvironmentFile=-/etc/default/recharger-ao-balance
+Environment=HOME=/opt/recharger-ao-balance
+Restart=always
+RestartSec=5
+KillSignal=SIGINT
+TimeoutStopSec=30
+LimitNOFILE=1048576
+ExecStart=/opt/recharger-ao-balance/infra/start-recharger-node.sh
+
+[Install]
+WantedBy=multi-user.target
