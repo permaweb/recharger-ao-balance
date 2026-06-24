@@ -51,11 +51,11 @@ rebar3 device package
 published device
 
 ```bash
-Published device: recharger-ao-balance@1.0; 
+device publish: recharger-ao-balance@1.0; 
 
-Specification ID: ZZPxZfKlM3vg6qQO2zs5ISVp0JAL3E_XZ9wZ_pA0rOU; 
+spec=knI1BIDM-7S5j23xGERrBJipPpUIi2g9D9b6_Lwb9ks 
 
-Implementation ID: cZVD2g1Ir69KoZBE8-tja2FZVyC4O46MeAfMjW4NuZk; 
+impl=VxQlYvvXLrx_lZ0_w-vYF4M1p3MbwLIxuoV5Nram1Kk 
 
-Signer: vZY2XY1RD9HIfWi8ift-1_DnHLDadZMWrufSh-_rKF0.
+signer=vZY2XY1RD9HIfWi8ift-1_DnHLDadZMWrufSh-_rKF0
 ```
