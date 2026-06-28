@@ -71,11 +71,11 @@ rebar3 device package
 published device
 
 ```bash
-device publish: recharger-ao-balance@1.0
+device publish: recharger-ao-balance@1.0 
 
-spec=XzuSTJK0p3kZRFO2_a7GglmNgrZaNeZeWYT7yHZa0T4 
+spec=QAdB6Vg8Id5bDjuJaY6FmJYe45XFeD32OLJB6VVPBt8 
 
-impl=UxHCrPcOowy9z3Bog1raz3Firu2wS4ppDt-4qVQUtY8 
+impl=K7qr20zO3qJM5F3DyvPatXk9AcPgg9TDW00fC46USAA 
 
 signer=vZY2XY1RD9HIfWi8ift-1_DnHLDadZMWrufSh-_rKF0
 ```
